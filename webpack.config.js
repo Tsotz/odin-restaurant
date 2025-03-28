@@ -22,6 +22,10 @@ module.exports = {
         test: /\.(png|jpg|jpeg|gif|svg)$/i, // Any image file format
         type: 'asset/resource', // Tells Webpack to copy these files to "dist"
       },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
     ],
   },
 
